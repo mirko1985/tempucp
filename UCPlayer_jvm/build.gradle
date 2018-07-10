@@ -49,9 +49,5 @@ build.doLast {
         from "${buildDir}/libs"
         include "*.*"
         into "${projectDir}/UCPlayerAndroid/app/libs"
-
-
-        println "from == " + "${buildDir}/libs"
-        println "into == " + "${projectDir}/UCPlayerAndroid/app/libs"
     }
 }

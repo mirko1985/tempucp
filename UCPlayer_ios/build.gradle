@@ -23,11 +23,7 @@ build.doLast {
     copy {
         from "${buildDir}/konan/bin/iphone_sim"
         include "*.*"
-	include "**"
+	    include "**"
         into "${projectDir}/UCPlayerIos"
-
-
-        println "from == " + "${buildDir}/konan/bin/iphone_sim"
-        println "into == " + "${projectDir}/UCPlayerIos"
     }
 }
