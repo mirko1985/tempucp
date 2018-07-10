@@ -1,0 +1,26 @@
+buildscript {
+
+    repositories {
+        mavenCentral()
+        maven {
+            url  "https://dl.bintray.com/jetbrains/kotlin-native-dependencies"
+        }
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-native-gradle-plugin:0.5"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.41"
+    }
+}
+
+
+apply plugin: 'konan'
+
+konan.targets = ['mingw']
+
+konanArtifacts {
+    dynamic('UCPlayer_uwp') {
+        linkerOpts "-Wl,--subsystem,windows"
+        srcFiles project.fileTree('../src/')
+    }
+}

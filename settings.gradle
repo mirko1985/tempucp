@@ -1,0 +1,3 @@
+rootProject.name = 'UCPlayer'
+
+include 'UCPlayer_jvm', 'UCPlayer_js', 'UCPlayer_ios', 'UCPlayer_uwp'
