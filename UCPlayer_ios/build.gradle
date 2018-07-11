@@ -10,7 +10,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-native-gradle-plugin:$kotlin_native_version"
     }
 }
-group 'io.github.jitinsharma'
+
 apply plugin: "konan"
 konan.targets = ["iphone", "iphone_sim"]
 konanArtifacts {
