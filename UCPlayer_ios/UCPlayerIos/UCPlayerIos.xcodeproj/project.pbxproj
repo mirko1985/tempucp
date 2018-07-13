@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		800936FF20F8CF3C006E7729 /* UCPlayer_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800936FE20F8CF3C006E7729 /* UCPlayer_ios.framework */; };
+		8009370020F8CF3C006E7729 /* UCPlayer_ios.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 800936FE20F8CF3C006E7729 /* UCPlayer_ios.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		807C059520F5111C00E56BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C059420F5111C00E56BF3 /* AppDelegate.swift */; };
 		807C059720F5111C00E56BF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C059620F5111C00E56BF3 /* ViewController.swift */; };
 		807C059A20F5111C00E56BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807C059820F5111C00E56BF3 /* Main.storyboard */; };
 		807C059C20F5111C00E56BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807C059B20F5111C00E56BF3 /* Assets.xcassets */; };
 		807C059F20F5111C00E56BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807C059D20F5111C00E56BF3 /* LaunchScreen.storyboard */; };
 		807C05AA20F5111C00E56BF3 /* UCPlayerIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C05A920F5111C00E56BF3 /* UCPlayerIosTests.swift */; };
-		807C05B520F5130900E56BF3 /* Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807C05B420F5130900E56BF3 /* Base.framework */; };
-		807C05B620F5130900E56BF3 /* Base.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 807C05B420F5130900E56BF3 /* Base.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,13 +28,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		807C05B720F5130900E56BF3 /* Embed Frameworks */ = {
+		8009370120F8CF3C006E7729 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				807C05B620F5130900E56BF3 /* Base.framework in Embed Frameworks */,
+				8009370020F8CF3C006E7729 /* UCPlayer_ios.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		800936FE20F8CF3C006E7729 /* UCPlayer_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UCPlayer_ios.framework; sourceTree = "<group>"; };
 		807C059120F5111C00E56BF3 /* UCPlayerIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCPlayerIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		807C059420F5111C00E56BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		807C059620F5111C00E56BF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		807C05A520F5111C00E56BF3 /* UCPlayerIosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UCPlayerIosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		807C05A920F5111C00E56BF3 /* UCPlayerIosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCPlayerIosTests.swift; sourceTree = "<group>"; };
 		807C05AB20F5111C00E56BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		807C05B420F5130900E56BF3 /* Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Base.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				807C05B520F5130900E56BF3 /* Base.framework in Frameworks */,
+				800936FF20F8CF3C006E7729 /* UCPlayer_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 		807C058820F5111C00E56BF3 = {
 			isa = PBXGroup;
 			children = (
-				807C05B420F5130900E56BF3 /* Base.framework */,
+				800936FE20F8CF3C006E7729 /* UCPlayer_ios.framework */,
 				807C059320F5111C00E56BF3 /* UCPlayerIos */,
 				807C05A820F5111C00E56BF3 /* UCPlayerIosTests */,
 				807C059220F5111C00E56BF3 /* Products */,
@@ -125,7 +125,7 @@
 				807C058D20F5111C00E56BF3 /* Sources */,
 				807C058E20F5111C00E56BF3 /* Frameworks */,
 				807C058F20F5111C00E56BF3 /* Resources */,
-				807C05B720F5130900E56BF3 /* Embed Frameworks */,
+				8009370120F8CF3C006E7729 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

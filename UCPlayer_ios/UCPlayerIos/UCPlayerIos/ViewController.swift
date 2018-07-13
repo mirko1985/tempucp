@@ -7,17 +7,25 @@
 //
 
 import UIKit
-import Base
+import UCPlayer_ios
 
 class ViewController: UIViewController {
 
+    class IosUUID: NSObject, UCPUUID{
+        func randomUUID() -> String {
+            return UUID().uuidString
+        }
+        
+    }
+    
     @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        var rs = BaseRandomString(text: "IOS")
         
-        label.text = rs.randomString()
+        let uuid = IosUUID()
+        let player = UCPPlayer(uuid: uuid)
+        
+        label.text = player.getUUID()
     }
 
     override func didReceiveMemoryWarning() {

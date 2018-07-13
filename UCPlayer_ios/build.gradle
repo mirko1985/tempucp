@@ -14,7 +14,7 @@ buildscript {
 apply plugin: "konan"
 konan.targets = ["iphone", "iphone_sim"]
 konanArtifacts {
-    framework('Base') {
+    framework('UCPlayer_ios') {
         srcDir '../src/'
     }
 }
